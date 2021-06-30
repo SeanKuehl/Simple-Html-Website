@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
 
-    <title>HTML5 Bones :: PAGE TITLE</title>
+    <title>My website</title>
 
     <!-- Enter a brief description of your page -->
-    <meta name="description" content="">
+    <meta name="description" content="Welcome to my page!">
 
     <!-- Define a viewport to mobile devices to use - telling the browser to assume that the page is as wide as the device (width=device-width,
     and setting the initial page zoom level to be 1 (initial-scale=1.0), and fixing width=device-width for iOS9 (shtink-to-fit=no) -->
@@ -23,7 +23,7 @@
     <!-- Include the HTML5 shiv print polyfill for Internet Explorer browsers 8 and below -->
     <!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
 </head>
-<body>
+<body style="background-color:powderblue;">
 
     <!-- The page header typically contains items such as your site heading, logo and possibly the main site navigation -->
     <!-- ARIA: the landmark role "banner" is set as it is the prime heading or internal title of the page -->
@@ -53,14 +53,8 @@
 
                 <!-- This is the section's header. It contains the heading and navigation links for within the section -->
                 <header>
-                    <h2>Getting Started</h2>
-                    <!-- ARIA: the landmark role "navigation" is added here as the element contains page navigation -->
-                    <nav role="navigation">
-                        <ul>
-                            <li><a href="#introduction">Introduction</a></li>
-                            <li><a href="#instructions">Instructions</a></li>
-                        </ul>
-                    </nav>
+                    <h2>Hello there!</h2>
+                    
                 </header>
 
                 <!-- The <article> element can be used to enclose content that still makes sense on its own and is therefore "reusable" -->
@@ -88,7 +82,11 @@
                     </ol>
 
                 </article>
-
+				
+				<!-- this is how you add an image <img src="icon.png" alt="this image is a standin" width="500" height="600"> -->
+				
+				<img src="icon.png" alt="this image is a standin">
+				
             </section>
 
         </main>
@@ -101,6 +99,8 @@
 
             <!-- A <header> element is not required here as the heading only contains a single <h3> element -->
             <h3>Did you know?</h3>
+
+			<!-- this is how I make something a link: <a href="http://www.iandevlin.com/blog/2011/04/html5/html5-section-or-article">section or article?</a> -->
 
             <!-- Content -->
             <p>The article and section elements cause a lot of confusion when people are trying to decide how and when to use them. The article: <a href="http://www.iandevlin.com/blog/2011/04/html5/html5-section-or-article">section or article?</a> might help you choose.</p>
