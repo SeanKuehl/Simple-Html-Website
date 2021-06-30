@@ -23,7 +23,7 @@
     <!-- Include the HTML5 shiv print polyfill for Internet Explorer browsers 8 and below -->
     <!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
 </head>
-<body style="background-color:DarkSeaGreen;">
+<body style="background-color:powderblue;">
 
     <!-- The page header typically contains items such as your site heading, logo and possibly the main site navigation -->
     <!-- ARIA: the landmark role "banner" is set as it is the prime heading or internal title of the page -->
@@ -54,9 +54,7 @@
                 <!-- This is the section's header. It contains the heading and navigation links for within the section -->
                 <header>
                     <h2>Hello there!</h2>
-					
-					<!-- the below only works because it's in same directory, same with images-->
-                    <a href="standinSecondPage.html">this is the link text</a>
+                    
                 </header>
 
                 <!-- The <article> element can be used to enclose content that still makes sense on its own and is therefore "reusable" -->
@@ -89,25 +87,39 @@
 				
 				<img src="icon.png" alt="this image is a standin">
 				
-				<!-- Content -->
-				<p>Here you can find my <a href="https://github.com/SeanKuehl">Github page</a> if you would like to look.</p>
-
-				
             </section>
 
         </main>
 
-        
+        <!-- An <aside> is used to enclose content that is additional to the main content but not essential. If it were removed, the meaning of the main content should not be lost, but the content of the <aside> also retains its meaning.
+        NOTE: the aside is placed outside of the <main> element as while its content is related to the content that is within the <main>
+        element, it is not part of it -->
+        <!-- ARIA: the landmark role "complementary" is added here as it contains supporting information for the main content that remains meaningful even when separated from it -->
+        <aside role="complementary">
+
+            <!-- A <header> element is not required here as the heading only contains a single <h3> element -->
+            <h3>Did you know?</h3>
+
+			<!-- this is how I make something a link: <a href="http://www.iandevlin.com/blog/2011/04/html5/html5-section-or-article">section or article?</a> -->
+
+            <!-- Content -->
+            <p>The article and section elements cause a lot of confusion when people are trying to decide how and when to use them. The article: <a href="http://www.iandevlin.com/blog/2011/04/html5/html5-section-or-article">section or article?</a> might help you choose.</p>
+
+        </aside>
 
     </div>
 
+    <!-- The main page footer can contain items such as copyright and contact information. It can also contain a duplicated navigation of your site which is not usually contained within a <nav> -->
+    <!-- ARIA: the landmark role "contentinfo" is added here as it contains metadata that applies to the parent document -->
+    <footer role="contentinfo">
 
-    <footer>
-
-        
+        <!-- The <address> element contains contact information for the nearest <article> or <body> element. This example is for the <body> -->
+        <address>
+          <p>For further information, please contact <a href="mailto:admin@example.com">Max Mustermann</a>.</p>
+        </address>
 
         <!-- Copyright information can be contained within the <small> element. The <time> element is used here to indicate that the '2018' is a date -->
-        <small>Copyright &copy; <time>2021</time></small>
+        <small>Copyright &copy; <time>2018</time></small>
 
     </footer>
 
