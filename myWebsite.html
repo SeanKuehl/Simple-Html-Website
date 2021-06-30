@@ -8,105 +8,97 @@
     <!-- Enter a brief description of your page -->
     <meta name="description" content="Welcome to my page!">
 
-    <!-- Define a viewport to mobile devices to use - telling the browser to assume that the page is as wide as the device (width=device-width,
-    and setting the initial page zoom level to be 1 (initial-scale=1.0), and fixing width=device-width for iOS9 (shtink-to-fit=no) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
-    <!-- Add normalize.css which enables browsers to render all elements more consistently and in line with modern standards as it only targets particular styles that need normalizing -->
-    <link href="css/normalize.css" rel="stylesheet" media="all">
-    <!-- For legacy support (IE 6/7, Firefox < 4, and Safari < 5) use normalize-legacy.css instead -->
-    <!--<link href="css/normalize-legacy.css" rel="stylesheet" media="all">-->
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+</style>
 
-    <!-- Include the site stylesheet -->
-    <link href="css/styles.css" rel="stylesheet" media="all">
-
-    <!-- Include the HTML5 shiv print polyfill for Internet Explorer browsers 8 and below -->
-    <!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+    
 </head>
 <body style="background-color:DarkSeaGreen;">
 
-    <!-- The page header typically contains items such as your site heading, logo and possibly the main site navigation -->
-    <!-- ARIA: the landmark role "banner" is set as it is the prime heading or internal title of the page -->
-    <header role="banner">
+   
+    <header>
 
-        <h1><abbr title="HyperText Markup Language 5">HTML5</abbr> Bones</h1>
+        <h1>This was made with <abbr title="HyperText Markup Language 5">HTML5</abbr> so it looks cool</h1>
 
-        <!-- ARIA: the landmark role "navigation" is added here as the element contains site navigation
-        NOTE: The <nav> element does not have to be contained within a <header> element, even though the two examples on this page are. -->
-        <nav role="navigation">
-            <!-- This can contain your site navigation either in an unordered list or even a paragraph that contains links that allow users to navigate your site -->
-        </nav>
+        
 
     </header>
 
-    <!-- If you want to use an element as a wrapper, i.e. for styling only, then <div> is still the element to use -->
-    <div class="wrap">
+    <!-- there are fancier things like sections and articles and using multiple headers but I'm comfortable with this-->
+    <div>
 
-        <!-- The <main> element is used to enclose the main content, i.e. that which contains the central topic of a document -->
-        <!-- ARIA: the landmark role "main" is added here as it contains the main content of the document, and it is recommended to add it to the
-        <main> element until user agents implement the required role mapping. -->
-        <main role="main">
+        
+				
+            
 
-            <!-- The <section> element can be used to enclose content that comes under a related heading.
-            NOTE: The <section> element can contain <article> elements and vice versa, if you think the content warrants it. -->
-            <section>
-
-                <!-- This is the section's header. It contains the heading and navigation links for within the section -->
+                
                 <header>
                     <h2>Hello there!</h2>
 					
 					<!-- the below only works because it's in same directory, same with images-->
-                    <a href="standinSecondPage.html">this is the link text</a>
+                    <!--<a href="standinSecondPage.html">this is the link text</a>-->
                 </header>
 
-                <!-- The <article> element can be used to enclose content that still makes sense on its own and is therefore "reusable" -->
-                <article id="introduction">
+                
+
+                    
+
+                    
+                
+
+                
 
                     <!-- A <header> element is not required here as the heading only contains a single <h3> element -->
-                    <h3>Introduction</h3>
-
-                    <!-- Content -->
-                    <p>Welcome to <abbr title="HyperText Markup Language 5">HTML5</abbr> Bones. This is a template that contains comments to aid you with setting up your <abbr title="HyperText Markup Language 5">HTML5</abbr> document.</p>
-
-                </article>
-
-                <!-- The <article> element can be used to enclose content that still makes sense on its own and is therefore "reusable" -->
-                <article id="instructions">
-
-                    <!-- A <header> element is not required here as the heading only contains a single <h3> element -->
-                    <h3>Instructions</h3>
+                    <h3>Some languages I know</h3>
 
                     <!-- Content -->
                     <ol>
-                        <li>Read the comments in this template</li>
-                        <li>Decide how you think your content may fit into the template</li>
-                        <li>Start building your document</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Python</li>
                     </ol>
 
-                </article>
+                
 				
 				<!-- this is how you add an image <img src="icon.png" alt="this image is a standin" width="500" height="600"> -->
 				
 				<img src="icon.png" alt="this image is a standin">
 				
-				<!-- Content -->
-				<p>Here you can find my <a href="https://github.com/SeanKuehl">Github page</a> if you would like to look.</p>
-
 				
-            </section>
+				<p> HTML may not be a programming language, but it can make some cool things! </p>
+				
+            
 
-        </main>
+        
 
         
 
     </div>
+	
+	<a href="https://github.com/SeanKuehl" class="button button1">My Github</a>
+	<a href="standinSecondPage.html" class="button button2">Second Page</a>
+
 
 
     <footer>
 
         
 
-        <!-- Copyright information can be contained within the <small> element. The <time> element is used here to indicate that the '2018' is a date -->
+        
         <small>Copyright &copy; <time>2021</time></small>
 
     </footer>
