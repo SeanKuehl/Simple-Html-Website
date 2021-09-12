@@ -3,13 +3,14 @@
 <head>
     <meta charset="utf-8">
 
-    <title>My website</title>
+    <title>Sean Kuehl's Website</title>
 
     <!-- Enter a brief description of your page -->
     <meta name="description" content="Welcome to my page!">
 
 <style>
 .button {
+  background-color: #4CAF50;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -21,87 +22,112 @@
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 .button1 {background-color: #4CAF50;} /* Green */
 .button2 {background-color: #008CBA;} /* Blue */
+
+
+img {
+  
+  
+  margin-top: 100px;
+ 
+  
+}
+
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+audio {text-align: center;}
+
+html, body {
+  width: 100%;
+  height:100%;
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #5b965a, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+<!--
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+-->
+
+
 </style>
 
     
 </head>
-<body style="background-color:DarkSeaGreen;">
+<body>
+<h1> Welcome To Sean Kuehl's Website!</h1>
+<p id="time"></p>
 
-   
-    <header>
-
-        <h1>This was made with <abbr title="HyperText Markup Language 5">HTML5</abbr> so it looks cool</h1>
-
-        
-
-    </header>
-
-    <!-- there are fancier things like sections and articles and using multiple headers but I'm comfortable with this-->
-    <div>
-
-        
-				
-            
-
-                
-                <header>
-                    <h2>Hello there!</h2>
-					
-					<!-- the below only works because it's in same directory, same with images-->
-                    <!--<a href="standinSecondPage.html">this is the link text</a>-->
-                </header>
-
-                
-
-                    
-
-                    
-                
-
-                
-
-                    <!-- A <header> element is not required here as the heading only contains a single <h3> element -->
-                    <h3>Some languages I know</h3>
-
-                    <!-- Content -->
-                    <ol>
-                        <li>C++</li>
-                        <li>Java</li>
-                        <li>Python</li>
-                    </ol>
-
-                
-				
-				<!-- this is how you add an image <img src="icon.png" alt="this image is a standin" width="500" height="600"> -->
-				
-				<img src="icon.png" alt="this image is a standin">
-				
-				
-				<p> HTML may not be a programming language, but it can make some cool things! </p>
-				
-            
-
-        
-
-        
-
-    </div>
-	
-	<a href="https://github.com/SeanKuehl" class="button button1">My Github</a>
-	<a href="standinSecondPage.html" class="button button2">Second Page</a>
+<p> This website has ambiance music, press play to enable it</p>
 
 
 
-    <footer>
+<div align="center">
+<audio controls autoplay loop>
+<source src="doodle.mp3">
+Your browser does not support the audio tag.
+</audio>
+</div>
 
-        
+<div align="center">
+<img src="me.jpg"></img>
+</div>
 
-        
-        <small>Copyright &copy; <time>2021</time></small>
+<!-- music attribution: https://opengameart.org/content/doodle-menu-like-song -->
 
-    </footer>
+<p>Hello, my name is Sean Kuehl, a software and tech enthusiast currently working towards my bachelors in computer science at Conestoga College.<br>
+   For me, it all began when at a young age I thought about what I wanted to do for a living. The saying "if you do what you love, <br>
+   you'll never work a day in your life" came to mind. I thought to myself "well, I love video games but a video game tester isn't a full-time job,<br>
+   so instead I'll make video games!".
+</p>
+
+<script>
+<!-- this code will run on 'startup', if I want something to happen on a button press -->
+<!--I would have to add 'onclick="java script or just func call"' to do it -->
+document.getElementById("time").innerHTML = "Accessed on: "+Date();
+</script>
+
+ <!--<a href="https://github.com/SeanKuehl" class="button button">My Github</a>-->
+<!-- also have a button that goes to my LinkedIn-->
+<!-- give the image a top margin of something, easiest supported way to do spacing-->
+
 
 </body>
 </html>
